@@ -1,0 +1,195 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*RESET*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Variables*/
+:root {
+    --primary-color: #22D4FD;
+    --primary-font-color: #F6F6F6;
+}
+
+body {
+    background-color: #000000;
+    color: var(--primary-font-color);
+}
+
+/*HEADER*/
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.header__menu__link:hover {
+    text-decoration: underline 4px;
+    transition-delay: 0.2s;
+}
+
+
+/*MAIN*/
+
+.main-presentation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6% 15%;
+    gap: 82px;
+}
+
+.presentation__content {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentation__content__title {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;
+}
+
+.presentation__content__text {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.presentation__content__links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentation__content__links h2 {
+    font-size: 24px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+}
+
+.presentation__content__links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.presentation__content__links-container div {
+    display: flex;
+    justify-content: center;
+}
+
+.presentation__content__links-container div span {
+    width: 32px;
+    height: 32px;
+    background-repeat: no-repeat;
+}
+
+
+.presentation__content__links-container div .github-icon {
+    background-image: url("../img/logo-github.png");
+}
+
+.presentation__content__links-container div .linkedin-icon {
+    background-image: url("../img/logo-linkedin.png");
+}
+
+.presentation__content__links-container div .twitch-icon {
+    background-image: url("../img/logo-twitch.png");
+}
+
+.presentation__content__links-element {
+    padding: 21.5px 0;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-font-color);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    border-radius: 8px;
+    min-width: 200px;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 10px;
+}
+
+.presentation__content__links-element:hover {
+    background-color: #272727;
+}
+
+.title-highlight {
+    color: var(--primary-color);
+}
+
+.main__hero__image {
+    transition-duration: 0.5s;
+    width: 50%;
+}
+
+.main__hero__image:hover {
+    transform: scale(1.04);
+    transition-duration: 0.5s;
+}
+
+/*Footer*/
+.footer {
+    background-color: var(--primary-color);
+    padding: 24px;
+    color: #000000;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+
+/*Mobile design*/
+
+@media (max-width:1200px) {
+    .header {
+        padding: 5%;
+    }
+    .header__menu {
+        justify-content: center;
+    }
+    .main-presentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentation__content {
+        width: auto;
+    }
+}
+
+
+
+/*
+@media screen and (max-width: 1366px) {
+    .main-presentation {
+        flex-direction: column;
+        gap: 10px;
+        margin: 5%;
+    }
+}
+*/
